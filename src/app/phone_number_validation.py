@@ -5,7 +5,7 @@ import re
 """
 
 
-def validate_phone_number(phone_number, *args, **kwargs):
+def validate_phone_number(phone_number: str) -> bool:
     pattern = r"^\+?\d{1,3}[-.\s]?\(?\d{1,4}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$"
     return re.match(pattern, phone_number) is not None
 

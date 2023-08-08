@@ -5,7 +5,7 @@ import re
 """
 
 
-def regex_email(text):
+def regex_email(text: str) -> list[str]:
     regex_pattern = r"\b(?:[A-Za-z0-9.%+-]*[A-Za-z0-9][A-Za-z0-9.%+_\-]*[A-Za-z0-9])@[A-Za-z0-9.-]+\.[A-Za-z]{2,7}\b"
     answer = re.findall(regex_pattern, text)
 

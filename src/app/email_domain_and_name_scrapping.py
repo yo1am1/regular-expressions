@@ -5,7 +5,7 @@ import re
 """
 
 
-def regex_email_domain_and_name(text):
+def regex_email_domain_and_name(text: str) -> list[str]:
     regex_pattern = (
         r"\b(?P<name>[A-Za-z0-9.%+-]*[A-Za-z0-9][A-Za-z0-9.%+_\-]*[A-Za-z0-9])@(?P<domain>["
         r"A-Za-z0-9.-]+\.[A-Za-z]{2,7})\b"

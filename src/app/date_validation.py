@@ -5,7 +5,7 @@ import re
 """
 
 
-def regex_date(text):
+def regex_date(text: str) -> list[str]:
     regex_pattern = r"^(0[1-9]|1[0-2])\/([0-2][0-9]|3[0-1])\/([0-9]{4})$"
     answer = re.findall(regex_pattern, text)
 

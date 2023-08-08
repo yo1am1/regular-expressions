@@ -6,7 +6,7 @@ import re
 
 
 def regex_split_text(
-    text="Dovahkiin, Dovahkiin, naal ok zin los vahriin, Wah dein vokul mahfaeraak ahst vaal! Ahrk fin norok"
+    text: str = "Dovahkiin, Dovahkiin, naal ok zin los vahriin, Wah dein vokul mahfaeraak ahst vaal! Ahrk fin norok"
     "paal graan fod nust hon zindro zaan, Dovahkiin, fah hin kogaan mu draal!Huzrah nu, kul do od, wah aan bok"
     "lingrah vod, Ahrk fin tey, boziik fun, do fin gein! Wo lostfron wah ney dov, ahrk fin reyliik do jul,"
     "Voth aan suleyk wah ronit faal krein! Ahrk fin zul, rok drey kod, nau tol morokei frod,Rul lot Taazokaan"
@@ -18,7 +18,7 @@ def regex_split_text(
     "kos stin nol bein Alduin jot,Dovahkiin kos fin saviik do muz! Dovahkiin, Dovahkiin, naal ok zin los vahriin,"
     "Wah dein vokul mahfaeraak ahst vaal!Ahrk fin norok paal graan fod nust hon zindro zaan,Dovahkiin, "
     "fah hin kogaan mu draa",
-):
+) -> list[str]:
     regex_pattern = r"([^.!?]+[.!?])"
 
     sentences = re.split(regex_pattern, text)

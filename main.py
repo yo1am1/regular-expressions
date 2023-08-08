@@ -6,9 +6,6 @@ from src.app import (
     email_domain_and_name_scrapping,
 )
 
-import threading
-from src.tests import tests
-
 
 def output(func):
     def wrapper():
